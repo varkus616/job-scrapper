@@ -1,8 +1,5 @@
-    # Python program Continued
-# Webdriver For Firefox
-from selenium import webdriver
-driver = webdriver.Chrome()
-driver.get("https://mbasic.facebook.com")
-html = driver.page_source # Getting Source of Current URL / Web-Page Loaded
-print(html)
-# End
+import job
+
+bot = job.JobBot('chromedriver-win64/chromedriver.exe')
+
+bot.land_first_page()
